@@ -1,0 +1,7 @@
+<aura:component description="CloneWithRelatedAsQuickAction" implements="force:lightningQuickActionWithoutHeader,force:hasSObjectName,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes">
+    <aura:attribute name="recordId" type="String" />
+    <aura:attribute name="sobjecttype" type="String" default="{!v.sObjectName}"/>
+
+    <c:CloneRecord originalRecordId="{!v.recordId}" cloneRelatedObjects="true"/>
+
+</aura:component>
